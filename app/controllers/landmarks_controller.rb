@@ -5,7 +5,7 @@ class LandmarksController < ApplicationController
   erb :'/landmarks/new'
   end
 
-  post '/figures' do
+  post '/landmarks' do
   @landmark = Landmark.create(params["landmark"])
 
   if !params["landmark"]["name"].empty?
