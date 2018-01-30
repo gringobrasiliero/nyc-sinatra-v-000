@@ -1,5 +1,5 @@
 class StrToIntYear < ActiveRecord::Migration[5.1]
   def change
-      change_column :landmarks, :year_completed, :string
+      change_column :landmarks, :year_completed, :integer
   end
 end
