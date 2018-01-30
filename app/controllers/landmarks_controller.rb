@@ -34,6 +34,9 @@ end
 patch '/landmarks/:id' do
 @landmark = Landmark.find(params[:id])
 @landmark.update(params[:figure])
+if !params["landmark"]["name"].empty?
+  @landmarks.name << Landmark.update(name: params["landmark"][:"name"])
+end
 
 @figure.save
  redirect to "/figures/#{@figure.id}"
