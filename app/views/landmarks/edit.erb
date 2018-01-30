@@ -4,7 +4,7 @@
 <h1></h1>
 
 
-  <form method="POST" action="/landmarks/<%@landmark.id%>">
+  <form method="POST" action="/landmarks/<%=@landmark.id%>">
     <input id="hidden" type="hidden" name="_method" value="PATCH">
     <label>Landmark:</label>
       <input type="text" name="landmark[name]" id="name"></input>
