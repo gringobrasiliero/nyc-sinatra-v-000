@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20180126173326) do
   create_table "landmarks", force: :cascade do |t|
     t.string "name"
     t.integer "figure_id"
-    t.integer "year_completed"
+    t.string "year_completed"
   end
 
   create_table "titles", force: :cascade do |t|
