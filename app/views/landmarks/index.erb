@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Landmarks </h1>
+
+<% @landmarks.each do |landmark| %>
+<li><a href="/landmarks/<%=landmark.id%>"><%=landmark.name%></a></li>
+<% end %>
+
+
+</body>
+</html>
