@@ -17,7 +17,7 @@ class LandmarksController < ApplicationController
   end
 
 get '/landmarks' do
-  
+
 end
 
 
