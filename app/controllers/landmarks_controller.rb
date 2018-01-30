@@ -34,12 +34,7 @@ end
 patch '/landmarks/:id' do
 @landmark = Landmark.find(params[:id])
 @landmark.update(params[:landmark])
-if !params["landmark"]["name"].empty?
-  @landmarks.name << Landmark.update(name: params["landmark"][:"name"])
-end
-if !params["landmark"]["year_completed"].empty?
-  @landmarks.year_completed << Landmark.update(year_completed: params["landmark"][:"year_completed"])
-end
+
 
 @landmarks.save
  redirect to "/landmarks/#{@landmark.id}"
