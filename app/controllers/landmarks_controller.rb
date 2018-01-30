@@ -33,7 +33,7 @@ end
 
 patch '/landmarks/:id' do
 @landmark = Landmark.find(params[:id])
-@landmark.update(params[:figure])
+@landmark.update(params[:landmark])
 if !params["landmark"]["name"].empty?
   @landmarks.name << Landmark.update(name: params["landmark"][:"name"])
 end
