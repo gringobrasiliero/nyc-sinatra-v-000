@@ -36,7 +36,7 @@ patch '/landmarks/:id' do
 @landmark.update(params[:landmark])
 
 
-@landmarks.save
+@landmark.save
  redirect to "/landmarks/#{@landmark.id}"
 end
 end
