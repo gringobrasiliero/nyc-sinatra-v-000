@@ -1,6 +1,6 @@
 class LandmarksController < ApplicationController
 
-  get '/landmarks/new' do
+  get '/landmarks' do
   @landmarks = Landmark.all
   erb :'/landmarks/new'
   end
@@ -15,5 +15,11 @@ class LandmarksController < ApplicationController
   @figure.save
    redirect to "/landmarks/#{@landmark.id}"
   end
+
+get '/landmarks' do
+  
+end
+
+
 
 end
