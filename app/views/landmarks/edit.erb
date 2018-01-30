@@ -8,7 +8,8 @@
     <input id="hidden" type="hidden" name="_method" value="PATCH">
     <label>Landmark:</label>
       <input type="text" name="landmark[name]" id="name"></input>
-      <input type="string" name="landmark[year_completed]" id="year_completed"></input>
+<label> <% @landmark.year_completed.to_s %> </label>
+      <input type="text" name="landmark[year_completed]" id="year_completed"></input>
 
     <input type="submit" value="Edit Landmark">
 </form>
