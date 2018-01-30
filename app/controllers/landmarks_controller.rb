@@ -41,7 +41,7 @@ if !params["landmark"]["year_completed"].empty?
   @landmarks.year_completed << Landmark.update(year_completed: params["landmark"][:"year_completed"])
 end
 
-@figure.save
- redirect to "/figures/#{@figure.id}"
+@landmarks.save
+ redirect to "/landmarks/#{@landmark.id}"
 end
 end
